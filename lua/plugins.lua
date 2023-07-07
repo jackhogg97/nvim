@@ -45,4 +45,6 @@ return require('packer').startup(function(use)
     end
   }
 
+  use 'shumphrey/bbc.vim'
+
 end)
