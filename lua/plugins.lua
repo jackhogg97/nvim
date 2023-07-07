@@ -7,7 +7,6 @@ return require('packer').startup(function(use)
   use ({'rose-pine/neovim', as = 'rose-pine'})
   use ({'nvim-treesitter/nvim-treesitter'}, {run = ':TSUpdate'})
   use 'nvim-treesitter/nvim-treesitter-context'
-  use 'github/copilot.vim'
   use 'tpope/vim-fugitive'
 
   use {
@@ -37,6 +36,13 @@ return require('packer').startup(function(use)
     'nvim-telescope/telescope.nvim', tag = '0.1.1',
     -- or                            , branch = '0.1.x',
     requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
   }
 
 end)

@@ -12,3 +12,5 @@ vim.keymap.set("n", "<leader>Y", "\"+y")
 
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
+
+vim.keymap.set("n", "<leader>ll", ":lua vim.diagnostic.open_float()<CR>")

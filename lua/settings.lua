@@ -23,4 +23,6 @@ set.signcolumn = 'yes'
 -- Start scrolling 5 lines from bottom
 set.scrolloff = 5
 
+set.wildmode = 'longest,list,full'
+
 local python_recommend_style = 0
